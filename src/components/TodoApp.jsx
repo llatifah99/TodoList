@@ -10,6 +10,7 @@ import {
 } from "../redux/Slice/todoSlice";
 import TaskList from "./TaskList";
 import FilterButtons from "./FilterButtons";
+import PropTypes from "prop-types";
 
 const TodoApp = () => {
   const dispatch = useDispatch();
@@ -78,4 +79,7 @@ const TodoApp = () => {
   );
 };
 
+TodoApp.propTypes = {
+  task: PropTypes.string,
+};
 export default TodoApp;
