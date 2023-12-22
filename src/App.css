@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* App.css */
-
 body {
   background-color: #daa9dd;
   display: flex;
@@ -18,7 +16,6 @@ body {
   max-width: 24rem;
 }
 
-/* Common button styles */
 .btn {
   background-color: #a042a7;
   color: #fff;
