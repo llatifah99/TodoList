@@ -53,16 +53,17 @@ const TodoApp = () => {
   });
 
   return (
-    <div>
-      <h3>My Todo List :</h3>
-      <div>
+    <div className="max-w-lg mx-auto mt-8 p-4 border rounded">
+      <h3 className="text-xl font-semibold mb-4 text-center">My Todo List :</h3>
+      <div className="mb-4 flex">
         <input
           type="text"
           placeholder="Add a task"
           value={task}
           onChange={handleInputChange}
+          className="w-full p-2 border rounded mr-2"
         />
-        <button onClick={handleAddTask}>
+        <button onClick={handleAddTask} className="btn">
           {editIndex !== null ? "Update" : "Add"}
         </button>
       </div>

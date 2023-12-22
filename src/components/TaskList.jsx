@@ -4,7 +4,7 @@ import "../App.css";
 
 const TaskList = ({ tasks, onCompleteToggle, onEditTask, onDeleteTask }) => {
   return (
-    <ul>
+    <ul className="list-none">
       {tasks.map((task, index) => (
         <TodoTask
           key={index}
